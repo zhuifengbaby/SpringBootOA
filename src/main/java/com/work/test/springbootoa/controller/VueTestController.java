@@ -16,7 +16,8 @@ public class VueTestController {
     @RequestMapping("index")
     public  String index(String aNetToken , Model model)
     {
+        aNetToken="TEST";
         model.addAttribute("aNetToken",aNetToken);
-        return "vue/test.jsp";
+        return "vue/index.html";
     }
 }
