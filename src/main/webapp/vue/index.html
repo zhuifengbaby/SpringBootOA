@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script src="/js/vue.js"></script>
+<body>
+<div id="app">
+    {{ message }}
+</div>
+</body>
+<script>
+    var token =request.getParameter("aNetToken");
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: token
+        }
+    })
+
+
+</script>
+
+</html>
